@@ -15,7 +15,7 @@ Rough Designs:
 ![the alt text will never divulge its secrets](resources/StartUp.png)
 
 
-# Notes from starting a server
+###### Notes from starting a server
 ip - 52.15.102.216
 how to ssh - ssh -i [key pair file] ubuntu@[ip address]
 I went into someone else's computer for the first time. Felt a little something. That's all. Still so much I don't know.
