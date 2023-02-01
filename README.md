@@ -19,3 +19,6 @@ Rough Designs:
 ip - 52.15.102.216
 how to ssh - ssh -i [key pair file] ubuntu@[ip address]
 I went into someone else's computer for the first time. Felt a little something. That's all. Still so much I don't know.
+
+###### Notes from naming an IP
+Feels a lot cooler, I've now got a website with a url. A lot easier to understand too.
