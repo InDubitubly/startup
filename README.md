@@ -22,3 +22,7 @@ I went into someone else's computer for the first time. Felt a little something.
 
 ###### Notes from naming an IP
 Feels a lot cooler, I've now got a website with a url. A lot easier to understand too.
+
+###### Notes from HTML with Simon
+It's scary how easy we can do things if we have the permissions file. Glad we were quickly instructed to keep it safe.
+Referencing other HTML pages is as easy as the href call, makes linking pages on a site make much more sense.
