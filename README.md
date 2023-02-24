@@ -13,6 +13,7 @@ When I was younger, we had a Discord bot that would take a picture and a command
 
 Rough Designs:
 ![the alt text will never divulge its secrets](resources/StartUp.png)
+<img src="resources/StartUp.png" width="500" height="500">[the alt text will never divulge its secrets]</image>
 
 
 ###### Notes from starting a server
