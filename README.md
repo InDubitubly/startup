@@ -12,8 +12,7 @@ I first of all learned that I had Visual Studio and not VS Code. So I learned th
 When I was younger, we had a Discord bot that would take a picture and a command and return an edited, funnier picture. The bot has been shut down for ages, but I want to revive the service with my website. My website will be easy to use and feature plenty of funny ways to edit photos without any of the effort. It will be the most convenient meme creator out there.
 
 Rough Designs:
-![the alt text will never divulge its secrets](resources/StartUp.png)
-<img src="resources/StartUp.png" width="500" height="500">[the alt text will never divulge its secrets]</image>
+![the alt text will never divulge its secrets](resources/StartUp.png = 416x552)
 
 
 ###### Notes from starting a server
