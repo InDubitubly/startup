@@ -26,3 +26,6 @@ Feels a lot cooler, I've now got a website with a url. A lot easier to understan
 ###### Notes from HTML with Simon
 It's scary how easy we can do things if we have the permissions file. Glad we were quickly instructed to keep it safe.
 Referencing other HTML pages is as easy as the href call, makes linking pages on a site make much more sense.
+
+### Push 1
+Added three html files and a CSS. Created framework for the home page and the header for all three.
