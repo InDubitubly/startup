@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+}
+
+header{
+    flex: 0 0 120px;
+}
+
+footer{
+    flex: 0 0 30px;
+}
+
+main{
+    flex: 1 1 calc(100vh - 160px);
+    display: flex;
+    flex-direction: row;
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+}

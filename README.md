@@ -41,3 +41,6 @@ Create page HTML done.
 
 ### Deploy 1
 HTML Structure Upload
+
+#### Push 5
+Flex CSS implemented
