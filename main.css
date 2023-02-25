@@ -1,24 +1,77 @@
+@font-face {
+    font-family: 'sspro';
+    src: url("fonts/ssp/SourceSansPro-Regular.ttf")
+  }
+
+  @font-face {
+    font-family: 'julee';
+    src: url("fonts/Julee-Regular.ttf")
+  }
+
+  
+  @font-face {
+    font-family: 'kotta';
+    src: url("fonts/KottaOne-Regular.ttf")
+  }
+
+  html {
+    font-family: "sspro" !important;
+}
+
 body {
     display: flex;
     flex-direction: column;
     min-width: 350px;
+    margin: 5em;
 }
 
-header{
+header {
     flex: 0 0 120px;
+    text-align: center;
+}
+
+h1 {
+    font-family: "julee";
+    font-size: 50pt !important;
+    line-height: 90pt;
+}
+
+.navbar-nav {
+    flex-direction: row !important;
+    padding-top: 1em;
+}
+
+.nav-item {
+    padding: 2em;
 }
 
 footer{
     flex: 0 0 30px;
+    font-family: "kotta";
 }
 
 main{
     flex: 1 1 calc(100vh - 160px);
     display: flex;
     flex-direction: row;
+    font-family:"sspro";
 }
 
-main div {
+div {
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
+
+.sup-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.sup-footer button {
+    flex: 1;
+    align-items: center;
+}
+
