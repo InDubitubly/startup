@@ -35,3 +35,9 @@ Framework for about page.
 
 #### Push 3
 Footer
+
+#### Push 4
+Create page HTML done.
+
+### Deploy 1
+HTML Structure Upload
