@@ -32,3 +32,6 @@ Added three html files and a CSS. Created framework for the home page and the he
 
 #### Push 2
 Framework for about page.
+
+#### Push 3
+Footer
