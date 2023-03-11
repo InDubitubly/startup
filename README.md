@@ -47,3 +47,6 @@ Flex CSS implemented
 
 #### Push 6
 Fonts imported, some boostrap enabled, like navbar. Figuring out bootstrap is the hardest part right now.
+
+#### Push 7
+Redoing concept, new HTML done and some css
