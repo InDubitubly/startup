@@ -10,16 +10,15 @@
             rel="stylesheet"
             integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
             crossorigin="anonymous">
-        
     </head>
 
     <body>
         <header class="navbar">
             <h1 class="title">5e SpellChecker</h1>
-            
-                <span id="user" class="player-name">none</span>
-                <button id="login" class="btn btn-secondary" type="button" onclick="login()">Log In</button>
-            
+            <form>
+                <label>Guest User</label>
+                <button class="btn btn-secondary" type="button" onclick="window.location.href='log.html'">Log In</button>
+            </form>
         </header>
 
         <main>
@@ -27,25 +26,14 @@
                 <div id="searchbar">
                     <form class="input-group rounded">
                         <input type="search" class="form-control rounded" placeholder="Check a spell"/>
-                        <button type="submit" class="btn btn-primary" onclick="window.location.href='search.html'">Search</button>
+                        <input class="btn btn-primary" type="submit" onclick="window.location.href='search.html'"/>
                     </form>
                 </div>
-                <div class="front_page">
-                    <span>
-                        <h3>Recent Spell Checked</h3>
-                        <ul>
-                            <li>List item</li>
-                        </ul>
-                    </span>
-                    <span>
-                        <h3>Random Spell Checking</h3>
-                        <ul>
-                            <li>List item</li>
-                        </ul>
-                    </span>
-                </div>
+
+
+
+
             </div>
         </main>
     </body>
-    <script src="problem.js"></script>
-</html>
+    </html>

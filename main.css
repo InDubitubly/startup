@@ -3,75 +3,64 @@
     src: url("fonts/ssp/SourceSansPro-Regular.ttf")
   }
 
-  @font-face {
+@font-face {
     font-family: 'julee';
     src: url("fonts/Julee-Regular.ttf")
-  }
+}
 
   
-  @font-face {
+@font-face {
     font-family: 'kotta';
     src: url("fonts/KottaOne-Regular.ttf")
-  }
-
-  html {
-    font-family: "sspro" !important;
 }
 
 body {
-    display: flex;
+    font-family: "sspro" !important;
+    display: flex !important;
     flex-direction: column;
-    min-width: 350px;
-    margin: 5em;
 }
 
-header {
-    flex: 0 0 120px;
-    text-align: center;
-}
-
-h1 {
-    font-family: "julee";
-    font-size: 50pt !important;
-    line-height: 90pt;
-}
-
-.navbar-nav {
-    flex-direction: row !important;
-    padding-top: 1em;
-}
-
-.nav-item {
-    padding: 2em;
-}
-
-footer{
-    flex: 0 0 30px;
-    font-family: "kotta";
-}
-
-main{
-    flex: 1 1 calc(100vh - 160px);
-    display: flex;
-    flex-direction: row;
-    font-family:"sspro";
-}
-
-div {
+header{
+    background-color:rgba(93, 3, 3, 0.797);
+    color: white;
     flex: 1;
-    display: flex;
-    flex-direction: column;
 }
 
-.sup-footer {
+.title {
+    font-family: julee !important;
+    font-size: 4em;
+}
+
+h3 {
+    font-family: kotta !important;
+}
+
+main {
+    background-color: rgb(247, 211, 158);
+    flex: 2;
+    align-items: center;
+}
+
+#searchbar {
+    margin: 5em;
+    max-width: 400px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.sup-footer button {
-    flex: 1;
-    align-items: center;
+div.front_page {
+    display: flex;
+    flex-flow: row, wrap;
+    justify-content: space-evenly;
+    margin: 5vw;
 }
 
+span {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}

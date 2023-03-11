@@ -50,3 +50,9 @@ Fonts imported, some boostrap enabled, like navbar. Figuring out bootstrap is th
 
 #### Push 7
 Redoing concept, new HTML done and some css
+
+#### Push 8
+Got the JS username working, and Log In/Log Out working. Super proud.
+
+### Deploy 2...?
+New HTML, CSS, and the JS login stuff.
