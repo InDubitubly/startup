@@ -65,3 +65,6 @@ Created a simple mock spell library, loaded it into the table.
 
 #### Push 11
 implemented regex filtering on the search table, now I just need a searched parameter.
+
+#### Push 12
+Added names and login/out to the search page

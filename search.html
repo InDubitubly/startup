@@ -15,10 +15,10 @@
     <body>
         <header class="navbar">
             <h1 class="title">5e SpellChecker</h1>
-            <form>
-                <label>Guest User</label>
-                <button class="btn btn-secondary" type="button" onclick="window.location.href='log.html'">Log In</button>
-            </form>
+            
+                <span id="user" class="player-name">none</span>
+                <button id="login" class="btn btn-secondary" type="button" onclick="login()">Log In</button>
+            
         </header>
 
         <main class="container-fluid text-center">
@@ -41,7 +41,7 @@
                     <tbody id="results"></tbody>
                 </table>
         </main>
-
+        <script src="problem.js"></script>
         <script src="search.js"></script>
     </body>
     </html>

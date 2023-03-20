@@ -28,4 +28,8 @@ function login(){
     window.location.href = "log.html";
 }
 
+function search() {
+    window.location.href = "search.html";
+}
+
 setName();
