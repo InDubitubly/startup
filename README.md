@@ -62,3 +62,6 @@ Added search JS and the base table code.
 
 #### Push 10
 Created a simple mock spell library, loaded it into the table.
+
+#### Push 11
+implemented regex filtering on the search table, now I just need a searched parameter.

@@ -13,10 +13,15 @@ let c = new Spell(1, 'Magic Missile', 120, "Three 1d4 + 1 force rockets, auto hi
 let d = new Spell(3, 'Fireball', 120, "20ft radius, 8d6 fire damage, Dex save.");
 let spells = [a, b, c, d];
 
+function searchSpells(){
+    const look = new RegExp('fire', 'i');
+    let results = spells.filter((spell) => look.test(spell.name));
+    console.log(results);
+    loadSpells(results);
+}
 
-function loadSpells(){
-    let results = spells;
 
+function loadSpells(results = spells){
     const tableBodyEl = document.querySelector('#results');
 
     if (results.length) {
@@ -44,4 +49,4 @@ function loadSpells(){
     }
 }
 
-loadSpells();
+searchSpells();
