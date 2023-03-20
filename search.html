@@ -21,8 +21,7 @@
             </form>
         </header>
 
-        <main>
-            <div>
+        <main class="container-fluid text-center">
                 <div id="searchbar">
                     <form class="input-group rounded">
                         <input type="search" class="form-control rounded" placeholder="Check a spell"/>
@@ -30,10 +29,19 @@
                     </form>
                 </div>
 
-
-
-
-            </div>
+                <table class="table table-warning table-striped-columns">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Level</th>
+                            <th>Name</th>
+                            <th>Range</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody id="results"></tbody>
+                </table>
         </main>
+
+        <script src="search.js"></script>
     </body>
     </html>
