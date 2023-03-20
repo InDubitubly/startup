@@ -56,3 +56,6 @@ Got the JS username working, and Log In/Log Out working. Super proud.
 
 ### Deploy 2...?
 New HTML, CSS, and the JS login stuff.
+
+#### Push 9
+Added search JS and the base table code.
