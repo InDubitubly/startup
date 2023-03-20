@@ -59,3 +59,6 @@ New HTML, CSS, and the JS login stuff.
 
 #### Push 9
 Added search JS and the base table code.
+
+#### Push 10
+Created a simple mock spell library, loaded it into the table.
