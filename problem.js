@@ -9,12 +9,10 @@ function setName() {
         playerNameEl.textContent = "Guestie";
         logEl.onclick = login;
         logEl.textContent = 'Log In';
-        console.log("no name");
     } else {
         playerNameEl.textContent = getPlayerName();
         logEl.onclick = logout;
         logEl.textContent = 'Log Out';
-        console.log("name in place: " + playerNameEl.textContent);
     }
 }
 
@@ -28,8 +26,6 @@ function login(){
     window.location.href = "log.html";
 }
 
-function search() {
-    window.location.href = "search.html";
-}
+
 
 setName();

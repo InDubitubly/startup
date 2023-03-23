@@ -13,8 +13,20 @@ let c = new Spell(1, 'Magic Missile', 120, "Three 1d4 + 1 force rockets, auto hi
 let d = new Spell(3, 'Fireball', 120, "20ft radius, 8d6 fire damage, Dex save.");
 let spells = [a, b, c, d];
 
+function getSearch() {
+    return localStorage.getItem('lookup');
+}
+
 function searchSpells(){
-    const look = new RegExp('fire', 'i');
+    const searchEl = document.querySelector('#look');
+    console.log("the search box: ")
+    console.log(searchEl.value);
+    if (searchEl.value) {
+        localStorage.setItem('lookup', searchEl.value);
+    } else {
+        localStorage.setItem('lookup', "");
+    }
+    const look = new RegExp(getSearch(), 'i');
     let results = spells.filter((spell) => look.test(spell.name));
     console.log(results);
     loadSpells(results);
@@ -25,6 +37,7 @@ function loadSpells(results = spells){
     const tableBodyEl = document.querySelector('#results');
 
     if (results.length) {
+        removeAllChildNodes(tableBodyEl);
         for (const [i, spell] of results.entries()) {
             const levelTdEl = document.createElement('td');
             const nameTdEl = document.createElement('td');
@@ -46,6 +59,12 @@ function loadSpells(results = spells){
         }
     } else {
         tableBodyEl.innerHTML = '<tr><td colSpan=4>No results</td></tr>'
+    }
+}
+
+function removeAllChildNodes(parent) {
+    while (parent.firstChild) {
+      parent.removeChild(parent.firstChild);
     }
 }
 

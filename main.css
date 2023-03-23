@@ -64,3 +64,9 @@ span {
 ul {
     list-style-type: none;
 }
+
+footer {
+    background-color:rgba(93, 3, 3, 0.797);
+    color: white;
+    flex: 1;
+}

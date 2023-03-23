@@ -68,3 +68,6 @@ implemented regex filtering on the search table, now I just need a searched para
 
 #### Push 12
 Added names and login/out to the search page
+
+#### Push 13
+Finalized searching on the search page. Added a footer with the GitHub link to the home and search pages.
