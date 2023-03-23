@@ -74,3 +74,9 @@ Finalized searching on the search page. Added a footer with the GitHub link to t
 
 #### Push 14
 Added home button on search page
+
+#### Push 15
+Removed searching from home page until there is time to implement fully.
+
+### Deploy 3
+Finished the searching part, uploading with a small array of spells
