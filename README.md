@@ -71,3 +71,6 @@ Added names and login/out to the search page
 
 #### Push 13
 Finalized searching on the search page. Added a footer with the GitHub link to the home and search pages.
+
+#### Push 14
+Added home button on search page

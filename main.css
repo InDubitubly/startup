@@ -69,4 +69,13 @@ footer {
     background-color:rgba(93, 3, 3, 0.797);
     color: white;
     flex: 1;
+    display: flex;
+}
+
+#gith {
+    flex:1000;
+}
+
+#return {
+    flex:1;
 }
