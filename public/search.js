@@ -1,18 +1,9 @@
-class Spell {
-    constructor(lev, nam, rag, desc) {
-        this.level = lev;
-        this.name = nam;
-        this.range = rag;
-        this.desc = desc;
-    }
+let spells = [];
+async function grabSpells() {
+    const response = await fetch('/api/spells');
+    spells = await response.json();
+    searchSpells();
 }
-
-let a = new Spell(0, 'Firebolt', 120, "1d10 fire damage, ignites objects, attack roll.");
-let b = new Spell(0, 'Mage Hand', 30, "Hand can lift 5lbs and can't attack.");
-let c = new Spell(1, 'Magic Missile', 120, "Three 1d4 + 1 force rockets, auto hit.");
-let cc = new Spell (1, 'Mage Armor', 0, "Gives yourself or a friend 13+Dex armor for 8hrs.");
-let d = new Spell(3, 'Fireball', 120, "20ft radius, 8d6 fire damage, Dex save.");
-let spells = [a, b, c, cc, d];
 
 function getSearch() {
     return localStorage.getItem('lookup');
@@ -23,9 +14,11 @@ function searchSpells(){
     console.log("the search box: ")
     console.log(searchEl.value);
     if (searchEl.value) {
+        //debug func
         console.log("exists");
         localStorage.setItem('lookup', searchEl.value);
     } else {
+        //debug func
         console.log("no val");
         localStorage.setItem('lookup', "");
     }
@@ -71,4 +64,4 @@ function removeAllChildNodes(parent) {
     }
 }
 
-searchSpells();
+grabSpells();

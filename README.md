@@ -80,3 +80,6 @@ Removed searching from home page until there is time to implement fully.
 
 ### Deploy 3
 Finished the searching part, uploading with a small array of spells
+
+#### Push 16
+Added the index.js file, and enabled it to work with endpoints. Backend is now functional. Time to put more in.
