@@ -43,7 +43,7 @@ function loadSpells(results = spells){
             levelTdEl.textContent = spell.level;
             nameTdEl.textContent = spell.name;
             rangeTdEl.textContent = spell.range;
-            descTdEl.textContent = spell.desc;
+            descTdEl.textContent = spell.description;
 
             const rowEl = document.createElement('tr');
             rowEl.appendChild(levelTdEl);

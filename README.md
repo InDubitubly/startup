@@ -83,3 +83,9 @@ Finished the searching part, uploading with a small array of spells
 
 #### Push 16
 Added the index.js file, and enabled it to work with endpoints. Backend is now functional. Time to put more in.
+
+#### Push 17
+Base DB functionality enabled, it reaches Mongo and returns to service. Only getAllSpells done, sorting is still frontend.
+
+## Deploy 4
+Node.js working, Mongo working
