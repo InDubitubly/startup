@@ -87,5 +87,11 @@ Added the index.js file, and enabled it to work with endpoints. Backend is now f
 #### Push 17
 Base DB functionality enabled, it reaches Mongo and returns to service. Only getAllSpells done, sorting is still frontend.
 
-## Deploy 4
+### Deploy 4
 Node.js working, Mongo working
+
+#### Push 18
+Authentication working, mostly copied over from Simon, and mostly understood.
+
+### Deploy 5
+Working authentication, totally was not testing on my production environment.
