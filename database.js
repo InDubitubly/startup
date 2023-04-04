@@ -23,7 +23,18 @@ async function getAllSpells() {
   return spellList.toArray();
 }
 
+async function getRandomSpell(){
+  const numDocs = spellDB.estimatedDocumentCount();
+  console.log(numDocs);
+  const num = Math.floor(Math.random() * numDocs);
+  console.log(num);
+  const luckySpell = spellDB.find().skip(num);
+  console.log (JSON.stringify(luckySpell));
+  return luckySpell;
+}
 
+
+//Auth stuff
 function getUser(name) {
   return userAuth.findOne({ name: name });
 }
@@ -48,13 +59,9 @@ async function createUser(name, password) {
 
 
 
-
-
-
-
-
 module.exports = {
   getAllSpells,
+  getRandomSpell,
   getUser,
   getUserByToken,
   createUser,

@@ -95,3 +95,6 @@ Authentication working, mostly copied over from Simon, and mostly understood.
 
 ### Deploy 5
 Working authentication, totally was not testing on my production environment.
+
+#### Push 19
+WebSockets connects, and is called immediately, but still working out how to pass my spell across.

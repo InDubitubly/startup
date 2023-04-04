@@ -3,6 +3,7 @@ const app = express();
 const DB = require('./database.js');
 const cookies = require('cookie-parser');
 const bcrypt = require('bcrypt');
+const { Socker } = require('./sockets.js');
 
 const authCookieName = 'token';
 
@@ -115,6 +116,8 @@ app.use(function (err, req, res, next) {
   });
 
 // it can hear you
-app.listen(port, () => {
+const httpService = app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 });
+
+new Socker(httpService);
