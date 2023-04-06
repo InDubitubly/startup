@@ -17,10 +17,10 @@ class Socker {
             const connection = { id: uuid.v4(), alive: true, ws: ws };
             connections.push(connection);
 
-            ws.on('message', function random(data) {
+            ws.on('message', async function random(data) {
                 console.log(String.fromCharCode(...data));
-                const spell = DB.getRandomSpell();
-                // console.log(spell);
+                const spell = await DB.getRandomSpell();
+                console.log(spell);
                 ws.send(JSON.stringify(spell));
             });
 

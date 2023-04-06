@@ -24,13 +24,11 @@ async function getAllSpells() {
 }
 
 async function getRandomSpell(){
-  const numDocs = spellDB.estimatedDocumentCount();
-  console.log(numDocs);
+  const numDocs = await spellDB.estimatedDocumentCount();
   const num = Math.floor(Math.random() * numDocs);
-  console.log(num);
-  const luckySpell = spellDB.find().skip(num);
-  console.log (JSON.stringify(luckySpell));
-  return luckySpell;
+  const luckySpell = spellDB.find({}, {limit:1}).skip(num);
+  console.log (luckySpell);
+  return luckySpell.toArray();
 }
 
 

@@ -31,6 +31,7 @@ app.use('/api', apiRouter);
 apiRouter.get('/spells', async (_req, res) => {
     console.log('reached backend api call');
     const spells = await DB.getAllSpells();
+    console.log(`${spells}`);
     res.send(spells);
 });
 

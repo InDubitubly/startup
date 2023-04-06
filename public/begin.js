@@ -11,14 +11,17 @@ function displayRandomSpell(spell){
     const levelLi = document.createElement('li');
     const nameLi = document.createElement('li');
     const descLi = document.createElement('li');
+    const bonus = document.createElement('li');
 
     levelLi.textContent = `Level: ${spell.level}`;
     nameLi.textContent = `Name: ${spell.name}`;
     descLi.textContent = `${spell.description}`;
+    bonus.textContent = "Brought to you by WebSockets!";
 
     listEl.append(levelLi);
     listEl.append(nameLi);
     listEl.append(descLi);
+    listEl.append(bonus);
 }
 
 class Socket {
@@ -38,10 +41,11 @@ class Socket {
             console.log('ws disconnected');
         };
         this.socket.onmessage = async (event) => {
-            // const msg = JSON.parse(await event.data.text);
-            console.log(`received: ${event}`)
+            console.log(`received: ${event}`);
+            const msg = JSON.parse(event.data);
+            console.log(`which is: ${msg}`);
             console.log('displaying random spell');
-            // displayRandomSpell(msg);
+            displayRandomSpell(msg[0]);
         }
     }
 

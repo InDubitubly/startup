@@ -98,3 +98,6 @@ Working authentication, totally was not testing on my production environment.
 
 #### Push 19
 WebSockets connects, and is called immediately, but still working out how to pass my spell across.
+
+#### Push 20
+WebSockets now sends the random spell object across and puts it on the front page!
