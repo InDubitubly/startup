@@ -101,3 +101,6 @@ WebSockets connects, and is called immediately, but still working out how to pas
 
 #### Push 20
 WebSockets now sends the random spell object across and puts it on the front page!
+
+### Update
+currently cloning to new computer and such yay
